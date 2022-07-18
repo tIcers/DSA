@@ -46,3 +46,71 @@ print(sum2(10))
 
 %timeit sum1(100)
 %timeit sum2(100)
+
+""" 
+Prints first item in a list of values.
+"""
+lst = [0,1,2,3,4,5,6]
+def constant_function(values):
+	return (values[0])
+
+constant_function(lst)
+
+"""Takes in list and prints out all values"""
+
+def lst_func(lst):
+	for val in lst:
+		print(val)
+lst_func([1,2,3])
+
+
+"""Prints pairs for every item in list."""
+
+def quad(lst):
+	for item_1 in lst:
+		for item_2 in lst:
+			print(item_1,item_2)
+
+lst = [0,1,2,3,4]
+
+print(quad(lst))
+
+
+"""prints all items once"""
+
+def print_once(lst):
+	for val in lst:
+		print(val)
+
+"""prints all items twice"""
+#o(2n)
+def print_twice(lst):
+	for val in lst:
+		print(val)
+
+	for val in lst:
+		print(val)
+
+"""
+Make function that prints first item O(1)
+	prints the first 1/2 of the list 
+	then prints a string 10 times
+"""
+
+def midpoint(lst):
+	print(lst[0]) # first sentence # o(1)
+
+	mid_point = len(lst) / 2
+
+	for val in lst[:mid_point]:
+		print(val) # this is for second sentence # o(n/2)
+
+	for i in range(10):
+		print("WOW!") # this is for third one # o(n)
+
+	# o (1 + (n/2) + n) = o(n)? if n is getting closer to inf
+
+	
+
+
+
