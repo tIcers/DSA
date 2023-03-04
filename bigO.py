@@ -3,6 +3,7 @@ import imp
 import timeit
 from math import log
 
+import matplotlib as matplotlib
 from django.forms import inlineformset_factory
 import numpy as np 
 import matplotlib.pyplot as plt
