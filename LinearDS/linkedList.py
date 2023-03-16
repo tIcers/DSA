@@ -38,3 +38,9 @@ class LinkedList:
                 string_list += str(current_node.get_value()) + "\n"
                 current_node = current_node.get_next_node()
         return string_list
+
+ll = LinkedList(5)
+ll.insert_beginning(70)
+ll.insert_beginning(5675)
+ll.insert_beginning(90)
+print(ll.stringify_list())
