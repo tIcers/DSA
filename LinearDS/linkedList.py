@@ -43,7 +43,7 @@ ll = LinkedList(5)
 ll.insert_beginning(70)
 ll.insert_beginning(5675)
 ll.insert_beginning(90)
-print(ll.stringify_list()
+print(ll.stringify_list())
     def remove_node(self,value_to_remove):
         current_node =self.get_head_node()
         if current_node.get_value() == value_to_remove:
