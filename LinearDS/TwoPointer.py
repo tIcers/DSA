@@ -44,3 +44,18 @@ def find_middle(linked_list):
             fast_pointer = fast_pointer.get_next_node()
             slow_poninter = slow_poninter.get_next_node()
     return slow_poninter
+
+# optimize code more?
+
+def find_middle(linked_list):
+    count = 0
+    fast_pointer = linked_list.head_node
+    slow_pointer = linked_list.head_node
+
+    while fast_pointer:
+        fast_pointer = fast_pointer.get_next_node()
+        if count % 2 != 0:
+            slow_poninter = slow_poninter.get_next_node()
+        count += 1
+    return slow_poninter
+
