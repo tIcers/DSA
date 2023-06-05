@@ -30,3 +30,17 @@ def nth_last_node(linked_list, n):
                current = current.get_next_node() 
 
     return current
+
+# create a method that returns the middle node of a linked_list 
+# For example, give the linked_list with the following elements: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7, the middle node would be the element with value 4.
+
+def find_middle(linked_list):
+    fast_pointer = linked_list.head_node
+    slow_poninter = linked_list.head_node
+
+    while fast_pointer:
+        fast_pointer = fast_pointer.get_next_node()
+        if fast_pointer:
+            fast_pointer = fast_pointer.get_next_node()
+            slow_poninter = slow_poninter.get_next_node()
+    return slow_poninter
