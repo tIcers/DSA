@@ -27,3 +27,14 @@ Constraints:
 s consists of parentheses only '()[]{}'.
 """
 
+
+class Solution:
+    def isValid(self, s):
+        stack = []
+        close_open = {"}": "{", "]": "[", ")": "("}
+
+        for char in s:
+            if char in close_open:
+                if stack and stack[-1] == close_open[char]
+                    stack.pop()
+
