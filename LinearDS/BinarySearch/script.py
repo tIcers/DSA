@@ -22,14 +22,6 @@ def sparse_search(data, search_val):
         if data[mid] == search_val:
             print("{0} found at position {1}".format(search_val, mid))
             return
-
-
-
-
-
-
-
-
         if search_val < data[mid]:
             last = mid - 1
         if search_val > data[mid]:
