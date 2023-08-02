@@ -32,7 +32,7 @@ s consists of parentheses only '()[]{}'.
 """
 
 class Solution:
-    def isValid(self, s:str) -> bool:
+    def isValid(self, s):
         stack = []
         close_open_pair = {')': '(', '}': '{', ']': '['}
 
