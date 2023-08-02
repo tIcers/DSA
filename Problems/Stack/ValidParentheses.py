@@ -21,20 +21,27 @@ Example 3:
 Input: s = "(]"
 Output: false
 
+Example 4:
+Input: s = "({})"
+Output: true
+
 Constraints:
 
 1 <= s.length <= 104
 s consists of parentheses only '()[]{}'.
 """
 
-
 class Solution:
-    def isValid(self, s):
+    def isValid(self, s:str) -> bool:
         stack = []
-        close_open = {"}": "{", "]": "[", ")": "("}
+        close_open_pair = {')': '(', '}': '{', ']': '['}
 
         for char in s:
-            if char in close_open:
-                if stack and stack[-1] == close_open[char]
+            if char in close_open_pair:
+                if stack and stack[-1] == close_open_pair[char]:
                     stack.pop()
-
+                else:
+                    return False
+            else:
+                stack.append(char)
+        return True if not stack else False
