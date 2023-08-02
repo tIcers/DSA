@@ -2,17 +2,17 @@ from stack import Stack
 
 print('\nTowaers of Hanoi!!')
 
-#creating stak
+#creating stacks
 
-stack = []
+stacks = []
 
 left_stack = Stack('Left')
 right_stack = Stack('Right')
 middle_stack = Stack('Middle')
 
-stack.append(left_stack)
-stack.append(middle_stack)
-stack.append(right_stack)
+stacks.append(left_stack)
+stacks.append(middle_stack)
+stacks.append(right_stack)
 
 # set up game
 
@@ -47,3 +47,27 @@ def get_input():
             for i in range(len(stacks)):
                 if user_input == choices[i]:
                     return stacks[i]
+
+# playing the game
+
+num_user_moves = 0
+
+while right_stack.get_size() != num_disks:
+    print('\n\n\n...Current Stacks...')
+    for stack in stacks:
+        stack.print_items()
+    while True:
+        print('\nWhich stack do you want to move from?\n')
+        from_stack = get_input()
+        print('\nWhich stack do you want tot move to?\n')
+        to_stack = get_input()
+        if from_stack.is_empty():
+            print('\n\nInvalid Move.Try Again')
+        elif to_stack.is_empty() or from_stack.peek() < to_stack.peek():
+            disk = from_stack.pop()
+            to_stack.push(disk)
+            num_user_moves += 1
+            break
+        else:
+            print('\n\nInvalid Move. Try Again')
+    print(f"\n\nYou completed the game in {num_user_moves} moves, and the optimal number of moves is {num_optimal_moves}")
