@@ -19,3 +19,9 @@ class HashMap:
         array_index = self.compressor(self.hash(key))
         return self.array[array_index]
 
+
+hash_map = HashMap(20)
+
+hash_map.assign('gneiss', 'metamorphic')
+
+print(hash_map.retrieve('gneiss'))
