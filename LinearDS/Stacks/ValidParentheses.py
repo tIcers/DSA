@@ -45,3 +45,4 @@ class Solution:
             else:
                 stack.append(char)
         return True if not stack else False
+
