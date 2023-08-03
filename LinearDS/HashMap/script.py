@@ -22,12 +22,15 @@ class HashMap:
         if current_array_value[0] == key:
             self.array[array_index] = [key, value]
             return
-        return 
-
+        return
 
     def retrieve(self, key):
         array_index = self.compressor(self.hash(key))
-        return self.array[array_index]
+        possible_return_value = self.array[array_index]
+        if possible_return_value is None:
+            return None
+        elif possible_return_value[0] == key:
+            return possible_return_value[1]
 
 
 hash_map = HashMap(20)
