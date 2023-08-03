@@ -1,0 +1,17 @@
+Hash Map: A key-value store that uses an array and a hasing function to save and retrive values.
+Key: the identifier given to a value for later retrival.
+Hash Function: A function that takes some input and returns a number
+Compression function: A function that transforms its inputs into some smaller range of possible outputs.
+
+Recipe for saving to a hash table:
+- Take they key and plug it ito the hash function, gtetting the hash code
+- Modulo that hash code by the lenght of the underlying arrray, gettin on array idex
+- Check if the array at that index is empty, if so, save the value (and the key) there
+- If the array is full at that index continue to the next possible posision dependeing on your collision strategey
+
+Recipe for retriveing from a hash table:
+- Take the key and plug it into the hash function, getting the has code. 
+- Module that hash code by the lenght of the underluying array, getting an array index.
+- Check if the array at that indesx has contents, if so, chec, the key saved there.
+- If the key mathces the one you're looking for, return the value.
+- If the keys don't mathc, continue to the next position depending on your collision strategy.
