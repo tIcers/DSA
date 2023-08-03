@@ -7,3 +7,6 @@ class HashMap:
         key_bytes = key.encode()
         hash_code = sum(key_bytes)
         return hash_code
+
+    def compressor(self, hash_code):
+        return hash_code % self.array_size
