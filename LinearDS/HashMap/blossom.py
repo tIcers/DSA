@@ -16,7 +16,15 @@ class HashMap:
 
     def assign(self, key, value):
         array_index = self.compress(self.hash(key))
-        self.array[array_index] = [key, value]
+        payload = Node([key, value])
+        list_at_array = self.array[array_index]
+
+        for item in list_at_array:
+            if key == item[0]:
+                item[1] = value
+            list_at_array.insert(payload)
+
+        
 
     def retrieve(self, key):
         array_index = self.compress(self.hash(key))
