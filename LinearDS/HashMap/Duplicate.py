@@ -22,6 +22,7 @@ Constraints:
 -109 <= nums[i] <= 109"""
 
 class Solution:
+
     def containDuplicate(self, nums):
         seen_num = set()
 
