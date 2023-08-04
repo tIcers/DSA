@@ -15,12 +15,30 @@ class HashMap:
         array_index = self.compressor(self.hash(key))
         current_array_value = self.array[array_index]
 
-        if current_array_value is None:
-            self.array = [key, value]
-            return
-        if current_array_value[0] == key:
-            self.array[array_index] = [key, value]
-            return
+        while current_array_value[0] != key:
+            new_hash_code = self.hash(key)
+            new_array_index = self.compressor(new_hash_code)
+            if self.array[new_array_index] is None:
+                self.array[new_array_index] = [key, value]
+                return 
+            if self.array[new_array_index] == key:
+                self.array[new_array_index]  = [key, value]
+                return 
+            
+            # collisions!
+            number_collisions = 1
+            while(current_array_value[0] != key):
+                new_hash_code = self.hash(key, number_collisions)
+                new_array_index = self.compressor(new_hash_code)
+                current_array_value = self.array[new_array_index]
+
+                if current_array_value is None:
+                    self.array[new_array_index] = [key, value]
+                    return
+                if current_array_value[0] == key:
+                    self.array[array_index] = [key, value]
+                    return
+            number_collisions +=1
         return
 
     def retrieve(self, key):
