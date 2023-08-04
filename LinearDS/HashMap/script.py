@@ -63,8 +63,11 @@ class HashMap:
                 return possible_return_value[1]
             retrieval_collisions += 1
 
-hash_map = HashMap(20)
+hash_map = HashMap(15)
 
+hash_map.assign('gabbro', 'igneous')
+hash_map.assign('sandstone', 'sedimentary')
 hash_map.assign('gneiss', 'metamorphic')
-
 print(hash_map.retrieve('gneiss'))
+print(hash_map.retrieve('gabbro'))
+print(hash_map.retrieve('sandstone'))
