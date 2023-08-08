@@ -29,5 +29,28 @@ Only one valid answer exists.
 
 class Solution:
     def twoSum(self, nums, target):
-        pass
+        hashMap = {}
 
+        for index, number in enumerate(nums):
+            difference  = target - number
+            if difference in hashMap:
+                return [hashMap[difference], index]
+            hashMap[number] = index
+        return 
+
+
+"""
+Step 1. I am going to create hashmap, that is key for numbers, value for index 
+
+Step 2. Going to subtract value from target and check the number with key
+
+Step 3. If the key maches with the target, then return the value of key
+"""
+
+solution = Solution()
+
+nums = [2,7,11, 15]
+target = 9
+
+result = solution.twoSum(nums, target)
+print(result)
