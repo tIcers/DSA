@@ -10,6 +10,9 @@ class Recursion:
             call_stack.append(execution_context)
             n -= 1
             print(call_stack)
+        while len(call_stack) != 0:
+            return_value = call_stack.pop()
+            result += return_value["n_value"]
         print("base case reached")
 
         return result, call_stack
