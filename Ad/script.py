@@ -9,6 +9,9 @@ logger.addHandler(stream_handler)
 file_handler = logging.FileHandler('output.log')
 logger.addHandler(file_handler)
 stream_handler = logging.StreamHandler(sys.stdout)
+
+formatter = logging.Formatter("[%(asctime)s] {%(levelname)s} %(name)s: #%(lineno)d - %(message)s")
+file_handler.setFormatter(formatter)
 logger.addHandler(stream_handler)
 
 logger.setLevel(logging.DEBUG)
