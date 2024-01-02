@@ -6,8 +6,8 @@ class Vertex:
     def get_edges(self):
         return list(self.edges.keys())
 
-    def add_edge(self, vertex):
+    def add_edge(self, vertex, weight=0):
         print("Adding edge to " + vertex)
-        self.edges[vertex] = True
+        self.edges[vertex] = weight 
 
 
