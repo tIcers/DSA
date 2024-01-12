@@ -2,10 +2,7 @@
 #
 # Given a string,determine if it is compreised of all unique characters. For example, the string 'abcde' has all unique characters and should return True. The string 'aabcde' contains duplicate characters and should return false.
 
-def uni_car(s):
-    if s == '':
-        return True
-
+def uni_char(s):
     seen = set()
 
     for string in s:
@@ -25,3 +22,5 @@ class TestUnique(object):
         
 t = TestUnique()
 t.test(uni_char)
+
+
