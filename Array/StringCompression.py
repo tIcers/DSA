@@ -13,6 +13,20 @@ class TestCompress(object):
         assert_equal(sol(''), '')
         assert_equal(sol('AABBCC'), 'A2B2C2')
         assert_equal(sol('AAABCCDDDDD'), 'A3B1C2D5')
+        assert_equal(sol(''), '')
+
+        # Test Case 2: String with Repeated Characters
+        assert_equal(sol('AABBCC'), 'A2B2C2')
+
+        # Test Case 3: String with Mixed Repeated Characters
+        assert_equal(sol('AAABCCDDDDD'), 'A3B1C2D5')
+
+        # Test Case 4: String with Unique Characters
+        assert_equal(sol('abc'), 'a1b1c1')
+
+        # Test Case 5: String with All Same Characters
+        assert_equal(sol('aaaa'), 'a4')
+
         print('ALL TEST CASES PASSED')
 
 
