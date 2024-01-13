@@ -32,7 +32,6 @@ def finder(arr1, arr2):
             return key
 
 # this is another solution using default dict
-
 import collections
 
 def finder2(arr1, arr2):
@@ -42,3 +41,15 @@ def finder2(arr1, arr2):
     for num in arr1: 
         if d[num] == 0: return num 
         else: d[num] -= 1
+
+# another solution for finder (which i did not come up....)
+def finder3(arr1, arr2):
+    result = 0
+    for num in arr1 + arr2:
+        result ^= num ## this is XOR
+    return result
+
+
+# Problem => Giver an array of intergers (postive and negative) find the largest countinous sum
+
+def large_count_sum(arr):
