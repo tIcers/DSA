@@ -118,3 +118,20 @@ def compress(s):
         compressed += f'{key}{value}'
     return compressed
 
+
+# Unique Characters in String
+# Problem
+#
+# Given a string,determine if it is compreised of all unique characters. For example, the string 'abcde' has all unique characters and should return True. The string 'aabcde' contains duplicate characters and should return false.
+
+def uni_char(s):
+    if s == '': 
+        return True
+    seen = set()
+
+    for letter in s:
+        if letter in seen:
+            return False
+        else:
+            seen.add(letter)
+    return True
