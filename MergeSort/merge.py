@@ -18,6 +18,7 @@ def merge(left, right):
     if left:
         result += left
 
+
     if right:
         result += right 
     return result
