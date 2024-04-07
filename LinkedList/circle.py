@@ -4,12 +4,13 @@ class Node(object):
         self.nextnode = None
 
     def check_circle(node):
-        marker1 = node
-        marker2 = node
+        slower = node
+        faster = node
 
-        while marker2 != None and marker2.nextnode != None:
-            marker1 = marker1.nextnode
-            marker2 = marker1.nextnode.nextnode
+        while faster != None and faster.nextnode != None:
+            slower = slower.nextnode
+            faster = faster.nextnode.nextnode
 
-            if marker1 == marker2:
+            if faster == slower:
                 return True
+        return False
