@@ -11,6 +11,6 @@ class Node(object):
             slower = slower.nextnode
             faster = faster.nextnode.nextnode
 
-            if faster == slower:
+            if slower == faster:
                 return True
         return False
