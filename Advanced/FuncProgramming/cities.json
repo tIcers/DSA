@@ -1,0 +1,160 @@
+{
+  "city": [
+    {
+      "name": "New York",
+      "country": "United States of America",
+      "coordinates": [40.7128, -74.006],
+      "continent": "North America"
+    },
+    {
+      "name": "Los Angeles",
+      "country": "United States of America",
+      "coordinates": [34.0522, 118.2437],
+      "continent": "North America"
+    },
+    {
+      "name": "Montreal",
+      "country": "Canada",
+      "coordinates": [45.5017, -73.5673],
+      "continent": "North America"
+    },
+    {
+      "name": "Toronto",
+      "country": "Canada",
+      "coordinates": [43.6532, -79.3832],
+      "continent": "North America"
+    },
+    {
+      "name": "Mexico City",
+      "country": "Mexico",
+      "coordinates": [19.4326, -99.1332],
+      "continent": "North America"
+    },
+    {
+      "name": "Sao Paulo",
+      "country": "Brazil",
+      "coordinates": [-23.5558, -46.6396],
+      "continent": "South America"
+    },
+    {
+      "name": "Buenos Aires",
+      "country": "Argentina",
+      "coordinates": [-34.6037, -58.3816],
+      "continent": "South America"
+    },
+    {
+      "name": "Rosario",
+      "country": "Argentina",
+      "coordinates": [-32.9587, -60.693],
+      "continent": "South America"
+    },
+    {
+      "name": "Porto",
+      "country": "Portugal",
+      "coordinates": [41.1579, -8.6291],
+      "continent": "Europe"
+    },
+    {
+      "name": "Paris",
+      "country": "France",
+      "coordinates": [48.8566, 2.3522],
+      "continent": "Europe"
+    },
+    {
+      "name": "Bordeaux",
+      "country": "France",
+      "coordinates": [44.8378, -0.5792],
+      "continent": "Europe"
+    },
+    {
+      "name": "Manchester",
+      "country": "United Kingdom",
+      "coordinates": [53.4808, 2.2426],
+      "continent": "Europe"
+    },
+    {
+      "name": "Glasgow",
+      "country": "United Kingdom",
+      "coordinates": [55.8642, -4.2518],
+      "continent": "Europe"
+    },
+    {
+      "name": "Milan",
+      "country": "Italy",
+      "coordinates": [45.4642, 9.19],
+      "continent": "Europe"
+    },
+    {
+      "name": "Rome",
+      "country": "Italy",
+      "coordinates": [41.9028, 12.4964],
+      "continent": "Europe"
+    },
+    {
+      "name": "Beirut",
+      "country": "Lebanon",
+      "coordinates": [33.8938, 35.5018],
+      "continent": "Asia"
+    },
+    {
+      "name": "Dubai",
+      "country": "United Arab Emirates",
+      "coordinates": [25.2048, 55.2708],
+      "continent": "Asia"
+    },
+    {
+      "name": "Mumbai",
+      "country": "India",
+      "coordinates": [19.076, 72.8777],
+      "continent": "Asia"
+    },
+    {
+      "name": "Shanghai",
+      "country": "China",
+      "coordinates": [31.2304, 121.4737],
+      "continent": "Asia"
+    },
+    {
+      "name": "Osaka",
+      "country": "Japan",
+      "coordinates": [34.6937, 135.5023],
+      "continent": "Asia"
+    },
+    {
+      "name": "Alexandria",
+      "country": "Egypt",
+      "coordinates": [31.2001, 29.9187],
+      "continent": "Africa"
+    },
+    {
+      "name": "Casablanca",
+      "country": "Morocco",
+      "coordinates": [33.5731, 7.5898],
+      "continent": "Africa"
+    },
+    {
+      "name": "Nairobi",
+      "country": "Kenya",
+      "coordinates": [-1.2921, 36.8219],
+      "continent": "Africa"
+    },
+    {
+      "name": "Lagos",
+      "country": "Nigeria",
+      "coordinates": [6.5244, 3.3792],
+      "continent": "Africa"
+    },
+    {
+      "name": "Johanessburg",
+      "country": "South Africa",
+      "coordinates": [-26.2041, 28.0473],
+      "continent": "Africa"
+    },
+    {
+      "name": "Cape Town",
+      "country": "South Africa",
+      "coordinates": [33.9249, 18.4241],
+      "continent": "Africa"
+    }
+  ]
+}
