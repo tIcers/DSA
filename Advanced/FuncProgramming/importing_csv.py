@@ -9,9 +9,13 @@ with open("tree.csv", newline="") as csvfile:
     next(reader)
 
     mapper = map(
-        lambda x: tree(int(x[0]), float(x[1]), int(x[2]), (float(x[3]))),
+        lambda x: tree(int(x[0]), float(x[1]), int(x[2].strip()), (float(x[3]))),
         reader,
     )
 
-    trees = tuple(mapper)
+    t = filter(lambda x: x.height > 75, mapper)
+    trees = tuple(t)
+    widest = reduce(lambda x, y: x if x.width > y.width else y, trees)
+
     print(trees)
+    print(widest)
